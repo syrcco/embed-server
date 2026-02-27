@@ -1,0 +1,9 @@
+# torch 需单独安装 CPU 版（不能通过 pip install -r requirements.txt 安装，否则会安装 CUDA 版）
+# 安装命令：pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cpu
+#
+# Dockerfile 中已处理（单独 RUN 层），本地开发请手动执行上面的命令。
+
+zentorch==5.1.0
+sentence-transformers
+fastapi
+uvicorn
